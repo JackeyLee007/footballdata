@@ -1,0 +1,3 @@
+*.pyc
+football/results/*
+.idea/
