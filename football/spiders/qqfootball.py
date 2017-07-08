@@ -78,6 +78,6 @@ class QqfootballSpider(CrawlSpider):
             mi['headDuelMiss']= defense.xpath('.//td[9]/text()').get()
             mi['ownGoal']= defense.xpath('.//td[10]/text()').get()
 
-            teamItem['matches'].append(mi)
+            teamItem['matches'].append(dict(mi))
 
         return teamItem
